@@ -37,7 +37,7 @@ function hasPassingGrade(score) {
     if(grade === "F"){
         return false
     }else{
-        return true 
+        return true     
     }
 };
 
