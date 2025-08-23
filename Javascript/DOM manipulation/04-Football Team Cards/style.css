@@ -1,0 +1,100 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  margin: 0;
+  color: #333;
+}
+
+main{
+    height: 100vh;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Stats del equipo */
+.team-stats {
+  max-width: 400px;
+  margin: 0 auto 30px auto;
+  padding: 15px;
+  border-radius: 12px;
+  background: #ffffffcc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.team-stats p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.team-stats span {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Label y select */
+.options-label {
+  display: block;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+#players {
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#players:hover {
+  border-color: #2980b9;
+  box-shadow: 0 0 6px rgba(41, 128, 185, 0.4);
+}
+
+/* Contenedor de cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Tarjetas de jugadores */
+.player-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.player-card h3 {
+  margin: 10px 0;
+  font-size: 1.3rem;
+  color: #34495e;
+}
+
+.player-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Efecto hover */
+.player-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
